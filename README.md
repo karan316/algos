@@ -11,9 +11,9 @@
 
 __Difficulty Levels solved :__
  
- 🟢 Easy: 65    
- 🟡 Medium: 52  
- 🔴 Hard:2   
+ 🟢 Easy: 50    
+ 🟡 Medium: 38  
+ 🔴 Hard: 2   
  🟣 Very Hard: 0   
  ✨ Review
 
