@@ -63,6 +63,6 @@
 
 #### LeetCode
 
-1. 🟡 [Find the duplicate in an array of N+1 integers](https://leetcode.com/problems/find-the-duplicate-number/) _CRUX: Fast and Slow Pointer. Linked list cycle detection. Do while and while loop._
+13. 🟡 [Search in a 2D matrix](https://leetcode.com/problems/find-the-duplicate-number/) _CRUX: Fast and Slow Pointer. Linked list cycle detection. Do while and while loop._
 
 <div style="font-size: 10px; font-style: italic; margin-top: 30px" >template credit: [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)</div>
