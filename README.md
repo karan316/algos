@@ -7,37 +7,38 @@
 
 </div>
 
-**Difficulty Levels solved :**
+**Problems Solved**
 
 🟢 Easy: 50  
- 🟡 Medium: 38  
- 🔴 Hard: 2  
- 🟣 Very Hard: 0  
- ✨ Review
+🟡 Medium: 38  
+🔴 Hard: 2  
+🟣 Very Hard: 0  
+🔥 Review
 
-<!-- ## Day 0:
+<!-- Template
+## Day 0:
 
 **Topic:** Arrays/Hashing
 
 #### LeetCode
 
-1. 🟡 [Find the duplicate in an array of N+1 integers](https://leetcode.com/problems/find-the-duplicate-number/) _CRUX: Fast and Slow Pointer. Linked list cycle detection. Do while and while loop._ -->
+1. 🟡 [Find the duplicate in an array of N+1 integers](https://leetcode.com/problems/find-the-duplicate-number/) _CRUX: Fast and Slow Pointer. Linked list cycle detection. Do while and while loop._ <div style="font-weight: bold">Time Complexity : O(N)</div> -->
 
 ## Day 1:
 
-**Topic:** Arrays/Hashing
+**Topic:** Arrays/Hashmap
 
 #### LeetCode
 
-1. 🟡 [Find the duplicate in an array of N+1 integers](https://leetcode.com/problems/find-the-duplicate-number/) _CRUX: Fast and Slow Pointer. Linked list cycle detection. Do while and while loop._
+1. 🟡 [Find the duplicate in an array of N+1 integers](https://leetcode.com/problems/find-the-duplicate-number/) _CRUX: Fast and Slow Pointers. Linked list cycle detection. Do while and while loop._ <div style="font-weight: bold">Time Complexity : O(N)</div>
 2. 🟡 [Sort 0, 1 and 2](https://leetcode.com/problems/sort-colors/) _CRUX: Dutch National Flag Algorithm. low, mid and high pointers. Put 0s towards low, 2 towards high, only increment mid if 1_
-3. 🟢 [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) _CRUX: Kadane's Algorithm_
-4. 🟡 ✨ [Merge Overlapping Sub intervals](https://leetcode.com/problems/merge-intervals/) _CRUX: Sort. For every element, go until next element's first is not mergeable._
+3. 🟢 [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) _CRUX: Kadane's Algorithm_ <div style="font-weight: bold">Time Complexity : O(N)</div>
+4. 🟡 🔥 [Merge Overlapping Sub intervals](https://leetcode.com/problems/merge-intervals/) _CRUX: Sort. For every element, go until next element's first is not mergeable._<div style="font-weight: bold">Time Complexity : O(N^2)</div>
 
 #### GeeksForGeeks
 
-5. 🟡 [Find Missing And Repeating](https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1) _CRUX: XOR range with given elements to find X^Y. Create buckets for set and unset bit. XOR both buckets to find X and Y. Traverse again to find X or Y._
-6. 🔴 ✨ [Merge Without Extra Space](https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays5135/1) _CRUX: Outer for loop calculate nextGap. Inner 3 for loops - compare elements in 1st both and 2nd array_
+5. 🟡 [Find Missing And Repeating](https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1) _CRUX: XOR range with given elements to find X^Y. Create buckets for set and unset bit. XOR both buckets to find X and Y. Traverse again to find X or Y._<div style="font-weight: bold">Time Complexity : O(5N) ~ O(N)</div>
+6. 🔴 🔥 [Merge Without Extra Space](https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays5135/1) _CRUX:Take a new array and add elements from both arrays in sorted order. Optimal(O(1) space): Outer for loop calculate nextGap. Inner 3 for loops - compare elements in 1st both and 2nd array_ <div style="font-weight: bold">Time Complexity : O(logN)(gap/2) x O(N)(traverse the array)</div>
 
  <!-- --------------------------------------------------------------------------------------------------------------------- -->
 
@@ -47,26 +48,40 @@
 
 #### LeetCode
 
-7. 🟡 ✨ [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) _CRUX: Take two dummy arrays inside the matrix to keep track of row and col which have a zero. Careful about a[0][0]_
-8. 🟢 [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) _CRUX: define end values as 1 for every row in each iteration. write down matrix on paper and get the indices from the previous row to add._
-9. 🟡 [Next Permutation](https://leetcode.com/problems/next-permutation/) _CRUX: Traverse from back. Find ind1 = i-1 such that a[i-1]<a[i]. Traverse from back again to find ind2 - first ele > a[ind1]. Swap ind1 & ind2. Sort all elements after ind1_
-10. 🟢 [Buy and Sell Stock I](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) _CRUX: only two things can happen - you find a min buy price or you find a max profit(prices[i] - buy price)_
-11. 🟡 [Rotate Matrix](https://leetcode.com/problems/rotate-image/) _CRUX: Transpose matrix and reverse every row. Transpose - two for loops (0...n, 0...i) swap(m[i][j], m[j][i])_
+7. 🟡 🔥 [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) _CRUX: Take two dummy arrays inside the matrix to keep track of row and col which have a zero. Careful about a[0][0]_<div style="font-weight: bold">Time Complexity : O(2(MxN)) (traverse the matrix twice)</div>
+8. 🟢 [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) _CRUX: define end values as 1 for every row in each iteration. write down matrix on paper and get the indices from the previous row to add._<div style="font-weight: bold">Time Complexity : O(N^2)</div>
+9. 🟡 [Next Permutation](https://leetcode.com/problems/next-permutation/) _CRUX: Traverse from back. Find ind1 = i-1 such that a[i-1]<a[i]. Traverse from back again to find ind2 - first ele > a[ind1]. Swap ind1 & ind2. Sort/Reverse(prefer) all elements after ind1_<div style="font-weight: bold">Time Complexity : O(3N)</div>
+10. 🟢 [Buy and Sell Stock I](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) _CRUX: only two things can happen - you find a min buy price or you find a max profit(prices[i] - buy price)_<div style="font-weight: bold">Time Complexity : O(N)</div>
+11. 🟡 [Rotate Matrix](https://leetcode.com/problems/rotate-image/) _CRUX: Transpose matrix and reverse every row. Transpose - two for loops (0...n, 0...i) swap(m[i][j], m[j][i])_<div style="font-weight: bold">Time Complexity : O(2N^2)</div>
 
 #### GeeksForGeeks
 
-12. 🔴 ✨ [Inversion Count(Modified Merge Sort)](https://practice.geeksforgeeks.org/problems/inversion-of-array/0) _CRUX:create two indices i and j, i is the index for first half and j is an index of the second half. if a[i] is greater than a[j], then there are (mid – i) inversions. because left and right subarrays are sorted, so all the remaining elements in left-subarray (a[i+1]…a[mid]) will be greater than a[j]_
+12. 🔴 🔥 [Inversion Count(Modified Merge Sort)](https://practice.geeksforgeeks.org/problems/inversion-of-array/0) _CRUX:create two indices i and j, i is the index for first half and j is an index of the second half. if a[i] is greater than a[j], then there are (mid – i) inversions. because left and right subarrays are sorted, so all the remaining elements in left-subarray (a[i+1]…a[mid]) will be greater than a[j]_<div style="font-weight: bold">Time Complexity : O(NlogN)</div>
+
+ <!-- --------------------------------------------------------------------------------------------------------------------- -->
 
 ## Day 3:
 
-**Topic:** Arrays/Hashing
+**Topic:** Arrays/Maths
 
 #### LeetCode
 
-13. 🟡 [Search in a 2D matrix I](https://leetcode.com/problems/search-a-2d-matrix/) _CRUX: Consider entire matrix as sorted array and do binary search. m[mid/m][mid%m] to get the actual mid._
-14. 🟡 ✨ [Search in a 2D matrix II](https://leetcode.com/problems/search-a-2d-matrix/) _CRUX: Place pointer at m[0][n-1]. if target < pointer move left else move down. Lesser ele will be on left, greater will be on right. if out of bounds ele doesn't exist._
-15. 🟡 [Power(x^n)](https://leetcode.com/problems/powx-n/) _CRUX: if even power square x and / pow by 2. if odd power multiply ans with x and pow--. if pow <0 return 1/ans_
-16. 🟢 [Majority Element (> N/2)](https://leetcode.com/problems/majority-element/) _CRUX: Moore's voting algorithm. when majority candidate gets cancelled by minority ele, new majority candidate is found._
-17. 🟡 ✨ [Majority Element (> N/3)](https://leetcode.com/problems/majority-element-ii/) _CRUX: extended Moore's voting algorithm. You only get the probable candidates in first traversal. Reverify by traversing again._
+13. 🟡 [Search in a 2D matrix I](https://leetcode.com/problems/search-a-2d-matrix/) _CRUX: Consider entire matrix as sorted array and do binary search. m[mid/m][mid%m] to get the actual mid._<div style="font-weight: bold">Time Complexity : O(log(NxM))</div>
+14. 🟡 🔥 [Search in a 2D matrix II](https://leetcode.com/problems/search-a-2d-matrix/) _CRUX: Place pointer at m[0][n-1]. if target < pointer move left else move down. Lesser ele will be on left, greater will be on right. if out of bounds ele doesn't exist._<div style="font-weight: bold">Time Complexity : O(M+N)</div>
+15. 🟡 [Power(x^n)](https://leetcode.com/problems/powx-n/) _CRUX: if even power square x and / pow by 2. if odd power multiply ans with x and pow--. if pow <0 return 1/ans_<div style="font-weight: bold">Time Complexity : O(logN)(n/2)</div>
+16. 🟢 [Majority Element (> N/2)](https://leetcode.com/problems/majority-element/) _CRUX: Moore's voting algorithm. when majority candidate gets cancelled by minority ele, new majority candidate is found ._<div style="font-weight: bold">Time Complexity : O(N)</div>
+17. 🟡 🔥 [Majority Element (> N/3)](https://leetcode.com/problems/majority-element-ii/) _CRUX: extended Moore's voting algorithm. You only get the probable candidates in first traversal. Reverify by traversing again [Check this](https://leetcode.com/problems/majority-element-ii/discuss/63537/My-understanding-of-Boyer-Moore-Majority-Vote)._<div style="font-weight: bold">Time Complexity : O(N)</div>
+
+ <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+## Day 4:
+
+**Topic:** Dynamic Programming/Hashmap
+
+#### LeetCode
+
+18. 🟡 🔥 [Grid Unique Paths](https://leetcode.com/problems/unique-paths/) _CRUX: DP would sum of upper and left cell. Optimal: m+n-2Cm-1_<div style="font-weight: bold">Time Complexity : O(N-1)(if r = n-1) or O(m-1)(if r = m-1)</div>
+19. 🔴 🔥 [Reverse pairs(Modified Merge Sort)](https://leetcode.com/problems/reverse-pairs/) _CRUX: During Merge calculate count until a[i]> 2LL x a[j] or j is out of bounds._<div style="font-weight: bold">Time Complexity : O(NlogN)(merge sort) + O(N)(moving i) + O(N)(moving j)</div>
+20. 🟢 [Two Sum](https://leetcode.com/problems/two-sum/) _CRUX: If complement of element exists in the hashmap, add the indices to the result else add the ele,index to the hashmap_ <div style="font-weight: bold">Time Complexity : O(N)</div>
 
 <div style="font-size: 10px; font-style: italic; margin-top: 100px" >template credit: [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)</div>
