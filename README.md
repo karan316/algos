@@ -23,7 +23,7 @@
 
 1. 🟡 [Find the duplicate in an array of N+1 integers](https://leetcode.com/problems/find-the-duplicate-number/) _CRUX: Fast and Slow Pointer. Linked list cycle detection. Do while and while loop._ -->
 
-## Day 0:
+## Day 1:
 
 **Topic:** Arrays/Hashing
 
@@ -41,7 +41,7 @@
 
  <!-- --------------------------------------------------------------------------------------------------------------------- -->
 
-## Day 1:
+## Day 2:
 
 **Topic:** Arrays/Permutation
 
@@ -57,12 +57,16 @@
 
 12. 🔴 ✨ [Inversion Count(Modified Merge Sort)](https://practice.geeksforgeeks.org/problems/inversion-of-array/0) _CRUX:create two indices i and j, i is the index for first half and j is an index of the second half. if a[i] is greater than a[j], then there are (mid – i) inversions. because left and right subarrays are sorted, so all the remaining elements in left-subarray (a[i+1]…a[mid]) will be greater than a[j]_
 
-## Day 2:
+## Day 3:
 
 **Topic:** Arrays/Hashing
 
 #### LeetCode
 
-13. 🟡 [Search in a 2D matrix](https://leetcode.com/problems/find-the-duplicate-number/) _CRUX: Fast and Slow Pointer. Linked list cycle detection. Do while and while loop._
+13. 🟡 [Search in a 2D matrix I](https://leetcode.com/problems/search-a-2d-matrix/) _CRUX: Consider entire matrix as sorted array and do binary search. m[mid/m][mid%m] to get the actual mid._
+14. 🟡 ✨ [Search in a 2D matrix II](https://leetcode.com/problems/search-a-2d-matrix/) _CRUX: Place pointer at m[0][n-1]. if target < pointer move left else move down. Lesser ele will be on left, greater will be on right. if out of bounds ele doesn't exist._
+15. 🟡 [Power(x^n)](https://leetcode.com/problems/powx-n/) _CRUX: if even power square x and / pow by 2. if odd power multiply ans with x and pow--. if pow <0 return 1/ans_
+16. 🟢 [Majority Element (> N/2)](https://leetcode.com/problems/majority-element/) _CRUX: Moore's voting algorithm. when majority candidate gets cancelled by minority ele, new majority candidate is found._
+17. 🟡 ✨ [Majority Element (> N/3)](https://leetcode.com/problems/majority-element-ii/) _CRUX: extended Moore's voting algorithm. You only get the probable candidates in first traversal. Reverify by traversing again._
 
-<div style="font-size: 10px; font-style: italic; margin-top: 30px" >template credit: [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)</div>
+<div style="font-size: 10px; font-style: italic; margin-top: 100px" >template credit: [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)</div>
