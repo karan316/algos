@@ -11,7 +11,7 @@
 
 🟢 Easy: 50  
 🟡 Medium: 38  
-🔴 Hard: 2  
+🔴 Hard: 4  
 🟣 Very Hard: 0  
 🔥 Review
 
@@ -83,5 +83,14 @@
 18. 🟡 🔥 [Grid Unique Paths](https://leetcode.com/problems/unique-paths/) _CRUX: DP would sum of upper and left cell. Optimal: m+n-2Cm-1_<div style="font-weight: bold">Time Complexity : O(N-1)(if r = n-1) or O(m-1)(if r = m-1)</div>
 19. 🔴 🔥 [Reverse pairs(Modified Merge Sort)](https://leetcode.com/problems/reverse-pairs/) _CRUX: During Merge calculate count until a[i]> 2LL x a[j] or j is out of bounds._<div style="font-weight: bold">Time Complexity : O(NlogN)(merge sort) + O(N)(moving i) + O(N)(moving j)</div>
 20. 🟢 [Two Sum](https://leetcode.com/problems/two-sum/) _CRUX: If complement of element exists in the hashmap, add the indices to the result else add the ele,index to the hashmap_ <div style="font-weight: bold">Time Complexity : O(N)</div>
+
+## Day 5:
+
+**Topic:** Hashing/Arrays
+
+#### LeetCode
+
+21. 🔴 🔥 [4SUM](https://leetcode.com/problems/4sum) _CRUX: BRUTE FORCE: sort -> three pointers(3 for loops) find the remainder using binary search in the elements after 3rd pointer(N^3logN) OPTIMAL: sort->two loops(0..n)(i+1..n) loop left=j+1, right = n if two sum less than req target left++ else if .. right++ else push to result_<div style="font-weight: bold">Time Complexity : O(N^3)</div>
+22. 🔴 [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) _CRUX: NAIVE: sort the array and count consecutive sequences. OPTIMAL: Add all elements in a hash set. start counting from the minimum possible number. increment count if num+1 is there in the hash set. [Check this](https://www.youtube.com/watch?v=qgizvmgeyUM&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=21)_<div style="font-weight: bold">Time Complexity : O(N)</div>
 
 <div style="font-size: 10px; font-style: italic; margin-top: 100px" >template credit: [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)</div>
