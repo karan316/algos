@@ -9,8 +9,8 @@
 
 **Problems Solved**
 
-🟢 Easy: 50  
-🟡 Medium: 38  
+🟢 Easy: 51  
+🟡 Medium: 40  
 🔴 Hard: 4  
 🟣 Very Hard: 0  
 🔥 Review
@@ -92,5 +92,18 @@
 
 21. 🔴 🔥 [4SUM](https://leetcode.com/problems/4sum) _CRUX: BRUTE FORCE: sort -> three pointers(3 for loops) find the remainder using binary search in the elements after 3rd pointer(N^3logN) OPTIMAL: sort->two loops(0..n)(i+1..n) loop left=j+1, right = n if two sum less than req target left++ else if .. right++ else push to result_<div style="font-weight: bold">Time Complexity : O(N^3)</div>
 22. 🔴 [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) _CRUX: NAIVE: sort the array and count consecutive sequences. OPTIMAL: Add all elements in a hash set. start counting from the minimum possible number. increment count if num+1 is there in the hash set. [Check this](https://www.youtube.com/watch?v=qgizvmgeyUM&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=21)_<div style="font-weight: bold">Time Complexity : O(N)</div>
+
+## Day 6:
+
+**Topic:** Hashing/Arrays
+
+#### LeetCode
+
+23. 🟢 [Number of Recent Pushes](https://leetcode.com/explore/challenge/card/october-leetcoding-challenge/559/week-1-october-1st-october-7th/3480/) _CRUX: Keep a window range. increment low if it falls out of the interval._<div style="font-weight: bold">Time Complexity : O(N)</div>
+24. 🟡 [Longest Substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) _CRUX: Sliding window(i,j). Keep a count map. If next(j+1) character is repeating then decrement the count of ith character and i++ else increment the count of (j+1)th character, j++ and calculate max length_
+
+#### GeeksForGeeks
+
+25. 🟡 🔥 [Max subarray with sum zero](https://practice.geeksforgeeks.org/home/) _CRUX: whenever sum is zero update the count. if sum not zero and sum does not exist in the map insert it. if it exists then update the max count if the number of subarray elements is greater than the previous count._ <div style="font-weight: bold">Time Complexity : O(NlogN)</div>
 
 <div style="font-size: 10px; font-style: italic; margin-top: 100px" >template credit: [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)</div>
