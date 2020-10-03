@@ -112,10 +112,18 @@
 
 #### LeetCode
 
-26. 🟡 🔥 [Combination Sum](https://leetcode.com/problems/combination-sum/) _CRUX: Try all possible solutions using DFS_<div style="font-weight: bold">Time Complexity : O(N)</div>
+26. 🟡 🔥 [Combination Sum](https://leetcode.com/problems/combination-sum/) _CRUX: Try all possible solutions using DFS [ Check this.](https://leetcode.com/problems/combination-sum-iii/discuss/427713#:~:text=The%20time%20complexity%20is%20O,is%20at%20most%202%5EN%20.)_<div style="font-weight: bold">Time Complexity : O(2^N) (Size of the solution space tree)</div>
 
 #### GeeksForGeeks
 
 27. 🟡 🔥 [Counting Subarray with XOR as K](https://www.geeksforgeeks.org/count-number-subarrays-given-xor/)_CRUX: X^Y = Z also implies Y = Z^X. if y = xr ^ k existed in the map which means we found freq[y] number of more sub arrays because we had found y freq number of times already and given that current prefix xor is xr there could only be a subarray with value equal to k. increment the prefix xor count_<div style="font-weight: bold">Time Complexity : O(NlogN) (logN average search time for map. for unordered_map best is O(1) worst is O(N))</div>
+
+## Day 7:
+
+**Topic:** Backtracking/XOR/Hashing
+
+#### LeetCode
+
+28. 🟢 [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) _CRUX: Take 3 pointers and reverse the links. NOTE: Last pointer should not go to NULL->NEXT. RECURSIVE: swap by add/subtract start and end values. Take a new pointer going till one before end pointer and call reverse with new end_<div style="font-weight: bold">Time Complexity : O(N)</div>
 
 <div style="font-size: 10px; font-style: italic; margin-top: 100px" >template credit: [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)</div>
