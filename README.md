@@ -9,10 +9,9 @@
 
 **Problems Solved**
 
-🟢 Easy: 51  
-🟡 Medium: 42  
+🟢 Easy: 52  
+🟡 Medium: 43  
 🔴 Hard: 4  
-🟣 Very Hard: 0  
 🔥 Review
 
 <!-- Template
@@ -118,12 +117,16 @@
 
 27. 🟡 🔥 [Counting Subarray with XOR as K](https://www.geeksforgeeks.org/count-number-subarrays-given-xor/)_CRUX: X^Y = Z also implies Y = Z^X. if y = xr ^ k existed in the map which means we found freq[y] number of more sub arrays because we had found y freq number of times already and given that current prefix xor is xr there could only be a subarray with value equal to k. increment the prefix xor count_<div style="font-weight: bold">Time Complexity : O(NlogN) (logN average search time for map. for unordered_map best is O(1) worst is O(N))</div>
 
-## Day 7:
+## Day 8:
 
-**Topic:** Backtracking/XOR/Hashing
+**Topic:** Linked List/Hashing/Set
 
 #### LeetCode
 
 28. 🟢 [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) _CRUX: Take 3 pointers and reverse the links. NOTE: Last pointer should not go to NULL->NEXT. RECURSIVE: swap by add/subtract start and end values. Take a new pointer going till one before end pointer and call reverse with new end_<div style="font-weight: bold">Time Complexity : O(N)</div>
 
+29. 🟢 [Middle of Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) _CRUX: fast and slow pointers_<div style="font-weight: bold">Time Complexity : O(N)</div>
+
+30. 🟢 [Merge two sorted linked lists](https://leetcode.com/problems/merge-two-sorted-lists/) _CRUX: Take one link pointer and head. Start linking from the lesser value until one of the two list pointers become NULL. Don't forget to link the remaining list in the end._<div style="font-weight: bold">Time Complexity : O(N)</div>
+31. 🟡 🔥 [Count of K diff Pairs in an array](https://leetcode.com/problems/k-diff-pairs-in-an-array/) _CRUX: assume b-a = k. if nums[i]-k(a) was already seen then insert nums[i]-k into the smaller number set. if nums[i]+k(b+k) was already seen then insert nums[i] into the smaller number set. insert the current number in already seen set. the length of the set of smaller numbers is the answer._<div style="font-weight: bold">Time Complexity : O(N)</div>
 <div style="font-size: 10px; font-style: italic; margin-top: 100px" >template credit: [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)</div>
