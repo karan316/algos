@@ -10,7 +10,7 @@
 **Problems Solved**
 
 🟢 Easy: 52  
-🟡 Medium: 43  
+🟡 Medium: 44  
 🔴 Hard: 4  
 🔥 Review
 
@@ -129,4 +129,12 @@
 
 30. 🟢 [Merge two sorted linked lists](https://leetcode.com/problems/merge-two-sorted-lists/) _CRUX: Take one link pointer and head. Start linking from the lesser value until one of the two list pointers become NULL. Don't forget to link the remaining list in the end._<div style="font-weight: bold">Time Complexity : O(N)</div>
 31. 🟡 🔥 [Count of K diff Pairs in an array](https://leetcode.com/problems/k-diff-pairs-in-an-array/) _CRUX: assume b-a = k. if nums[i]-k(a) was already seen then insert nums[i]-k into the smaller number set. if nums[i]+k(b+k) was already seen then insert nums[i] into the smaller number set. insert the current number in already seen set. the length of the set of smaller numbers is the answer._<div style="font-weight: bold">Time Complexity : O(N)</div>
+
+## Day 9:
+
+**Topic:** Arrays
+
+#### LeetCode
+
+32. 🟡 [Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals/) _CRUX: for every interval check if it can be merged in any of the other intervals. if yes then increase count and break to avoid merging multiple times. remaining elements = total elements - mergeable elements._<div style="font-weight: bold">Time Complexity : O(N^2)</div>
 <div style="font-size: 10px; font-style: italic; margin-top: 100px" >template credit: [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)</div>
