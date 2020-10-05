@@ -138,3 +138,12 @@
 
 32. 🟡 [Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals/) _CRUX: for every interval check if it can be merged in any of the other intervals. if yes then increase count and break to avoid merging multiple times. remaining elements = total elements - mergeable elements._<div style="font-weight: bold">Time Complexity : O(N^2)</div>
 <div style="font-size: 10px; font-style: italic; margin-top: 100px" >template credit: [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)</div>
+
+## Day 10:
+
+**Topic:** Bits
+
+#### LeetCode
+
+33. 🟢 [Complement Base 10](https://leetcode.com/problems/number-complement/) _CRUX: increment k until it becomes just greater than N._<div style="font-weight: bold">Time Complexity : O(N)</div>
+<div style="font-size: 10px; font-style: italic; margin-top: 100px" >template credit: [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)</div>
