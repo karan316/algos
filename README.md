@@ -10,7 +10,7 @@
 **Problems Solved**
 
 🟢 Easy: 53  
-🟡 Medium: 46
+🟡 Medium: 46  
 🔴 Hard: 4  
 🔥 Review
 
