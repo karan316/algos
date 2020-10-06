@@ -10,7 +10,7 @@
 **Problems Solved**
 
 🟢 Easy: 53  
-🟡 Medium: 44  
+🟡 Medium: 46
 🔴 Hard: 4  
 🔥 Review
 
@@ -146,4 +146,15 @@
 #### LeetCode
 
 33. 🟢 [Complement Base 10](https://leetcode.com/problems/number-complement/) _CRUX: increment k until it becomes just greater than N._<div style="font-weight: bold">Time Complexity : O(N)</div>
+
+## Day 11:
+
+**Topic:** LinkedList
+
+#### LeetCode
+
+34. 🟡 [Remove Nth Node from the end](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) _CRUX: Take 3 pointers - first, deleteNode and second. Take second n nodes ahead. After that move all three pointers until second == NULL._<div style="font-weight: bold">Time Complexity : O(N)</div>
+35. 🟢 [Delete the given Node from LL without a given head](https://leetcode.com/problems/delete-node-in-a-linked-list/) _CRUX: Copy the next node's value in the node given to be deleted. Join the links and delete the next node._<div style="font-weight: bold">Time Complexity : O(1)</div>
+36. 🟡 [Insert a node into BST](https://leetcode.com/problems/insert-into-a-binary-search-tree/) _CRUX: RECURSIVE: if root is NULL insert, if value > root go right else go left. ITERATIVE: infinite loop. if value > root if current->right exists move current to right and continue if NULL then insert data else same for left_<div style="font-weight: bold">Time Complexity : O(N)</div>
+
 <div style="font-size: 10px; font-style: italic; margin-top: 100px" >template credit: [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)</div>
