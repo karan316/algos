@@ -10,7 +10,7 @@
 **Problems Solved**
 
 🟢 Easy: 54  
-🟡 Medium: 46  
+🟡 Medium: 48  
 🔴 Hard: 4  
 🔥 Review
 
@@ -155,7 +155,7 @@
 
 34. 🟡 [Remove Nth Node from the end](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) _CRUX: Take 3 pointers - first, deleteNode and second. Take second n nodes ahead. After that move all three pointers until second == NULL._<div style="font-weight: bold">Time Complexity : O(N)</div>
 35. 🟢 [Delete the given Node from LL without a given head](https://leetcode.com/problems/delete-node-in-a-linked-list/) _CRUX: Copy the next node's value in the node given to be deleted. Join the links and delete the next node._<div style="font-weight: bold">Time Complexity : O(1)</div>
-36. 🟡 [Insert a node into BST](https://leetcode.com/problems/insert-into-a-binary-search-tree/) _CRUX: RECURSIVE: if root is NULL insert, if value > root go right else go left. ITERATIVE: infinite loop. if value > root if current->right exists move current to right and continue if NULL then insert data else same for left_<div style="font-weight: bold">Time Complexity : O(N)</div>
+36. 🟡 🔥 [Insert a node into BST](https://leetcode.com/problems/insert-into-a-binary-search-tree/) _CRUX: RECURSIVE: if root is NULL insert, if value > root go right else go left. ITERATIVE: infinite loop. if value > root if current->right exists move current to right and continue if NULL then insert data else same for left_<div style="font-weight: bold">Time Complexity : O(N)</div>
 
 37. 🟢 [Complement Base 10](https://leetcode.com/problems/number-complement/) _CRUX: increment k until it becomes just greater than N._<div style="font-weight: bold">Time Complexity : O(N)</div>
 
@@ -166,5 +166,16 @@
 #### LeetCode
 
 38. 🟢 [Rotate list k times to the right](https://leetcode.com/problems/rotate-list/) _CRUX: Take mod of list size for larger values of k_<div style="font-weight: bold">Time Complexity : O(NxK)</div>
+
+## Day 13:
+
+**Topic:** LinkedList
+
+#### LeetCode
+
+39. 🟡 [Add two numbers in Linked List](https://leetcode.com/problems/add-two-numbers/) _CRUX: Keep traversing both the lists until you reach end of one. Keep track of carry in every addition. Add the longer list elements along with the carry to the final list. Remember to add any final addition carry._<div style="font-weight: bold">Time Complexity : O(max(M,N))</div>
+40. 🟡 [Binary Search](https://leetcode.com/problems/binary-search/) _CRUX: while low<=high if target < mid -> high = mid-1 else low = mid+1_<div style="font-weight: bold">Time Complexity : O(logN)</div>
+41. 🟢 [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) _CRUX: Bring the larger list's pointer forward so that both of them start equally. Now check each node until they reach NULL_<div style="font-weight: bold">Time Complexity : O(max(M,N))</div>
+42. 🟢 [Check if list is palindrome](https://leetcode.com/problems/palindrome-linked-list/) _CRUX: Reverse the list from the middle node to till end. (JOIN the link to the reversed list!) Then check the nodes from start and middle until the middle pointer becomes NULL. If not equal return false._<div style="font-weight: bold">Time Complexity : O(N))</div>
 
 <div style="font-size: 10px; font-style: italic; margin-top: 100px" >template credit: [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)</div>
