@@ -9,8 +9,8 @@
 
 **Problems Solved**
 
-🟢 Easy: 54  
-🟡 Medium: 49  
+🟢 Easy: 55  
+🟡 Medium: 52  
 🔴 Hard: 4  
 🔥 Review
 
@@ -184,8 +184,34 @@
 
 #### LeetCode
 
-43. 🔥  🟡 [Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/) _CRUX: Serialize: Use preorder traversal to form the string. if root is null return "# ". Add a " " after each value( useful for string stream ). Deserialize: use string stream to get each value like a word. convert to int and get node->left and node->right recursively._<div style="font-weight: bold">Time Complexity : O(N) (Preorder traversal)</div>
+43. 🟡 🔥 [Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/) _CRUX: Serialize: Use preorder traversal to form the string. if root is null return "# ". Add a " " after each value( useful for string stream ). Deserialize: use string stream to get each value like a word. convert to int and get node->left and node->right recursively._<div style="font-weight: bold">Time Complexity : O(N) (Preorder traversal)</div>
 
 
+## Day 15:
+
+**Topic:** 
+
+#### LeetCode
+
+44. 🟡 [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) _CRUX: Sort wrt to second element NOT THE FIRST! count = 1. Start from second element(i=1). Skip overlapping intervals. Increment count and assign a new start point when non overlapping interval is found._<div style="font-weight: bold">Time Complexity : O(N) </div>
+45. 🟢 [Linked List Cycle I](https://leetcode.com/problems/linked-list-cycle/) _CRUX: Floyd's algorithm of fast pointer and slow pointer. In the while loop check for ALL null cases._<div style="font-weight:bold">Time complexity : O(N) </div>
+46. 🟡 [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) _CRUX: Extended Floyd's algorithm. Move fast pointer to head and move both slow and fast until they meet or slow == NULL. return slow_<div style="font-weight: bold">Time Complexity : O(N) </div>
+
+
+#### GeeksForGeeks
+47.  🟡 🔥 [Remove loop in a Linked List](https://practice.geeksforgeeks.org/problems/remove-loop-in-linked-list/1) _CRUX: Modified Floyd's algorithm._<div style="font-weight: bold">Time Complexity : O(N) </div>
+
+
+## Day 16:
+
+**Topic:** 
+
+#### LeetCode
+
+48. 🔴 [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) _CRUX: _<div style="font-weight: bold">Time Complexity : O() </div>
+49. 🟡 [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) _CRUX: _<div style="font-weight: bold">Time Complexity : O() </div>
+
+#### GeeksForGeeks
+51.  🟡 [Flatten a Linked List](https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1) _CRUX: _<div style="font-weight: bold">Time Complexity : O() </div>
 
 <div style="font-size: 10px; font-style: italic; margin-top: 100px" >template credit: [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)</div>
