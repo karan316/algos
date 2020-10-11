@@ -10,7 +10,7 @@
 **Problems Solved**
 
 🟢 Easy: 54  
-🟡 Medium: 48  
+🟡 Medium: 49  
 🔴 Hard: 4  
 🔥 Review
 
@@ -177,5 +177,15 @@
 40. 🟡 [Binary Search](https://leetcode.com/problems/binary-search/) _CRUX: while low<=high if target < mid -> high = mid-1 else low = mid+1_<div style="font-weight: bold">Time Complexity : O(logN)</div>
 41. 🟢 [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) _CRUX: Bring the larger list's pointer forward so that both of them start equally. Now check each node until they reach NULL_<div style="font-weight: bold">Time Complexity : O(max(M,N))</div>
 42. 🟢 [Check if list is palindrome](https://leetcode.com/problems/palindrome-linked-list/) _CRUX: Reverse the list from the middle node to till end. (JOIN the link to the reversed list!) Then check the nodes from start and middle until the middle pointer becomes NULL. If not equal return false._<div style="font-weight: bold">Time Complexity : O(N))</div>
+
+## Day 14:
+
+**Topic:** Trees
+
+#### LeetCode
+
+43. 🔥  🟡 [Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/) _CRUX: Serialize: Use preorder traversal to form the string. if root is null return "# ". Add a " " after each value( useful for string stream ). Deserialize: use string stream to get each value like a word. convert to int and get node->left and node->right recursively._<div style="font-weight: bold">Time Complexity : O(N) (Preorder traversal)</div>
+
+
 
 <div style="font-size: 10px; font-style: italic; margin-top: 100px" >template credit: [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)</div>
