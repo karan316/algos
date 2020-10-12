@@ -9,9 +9,9 @@
 
 **Problems Solved**
 
-🟢 Easy: 55  
+🟢 Easy: 56  
 🟡 Medium: 52  
-🔴 Hard: 4  
+🔴 Hard: 5  
 🔥 Review
 
 <!-- Template
@@ -99,7 +99,7 @@
 #### LeetCode
 
 23. 🟢 [Number of Recent Pushes](https://leetcode.com/explore/challenge/card/october-leetcoding-challenge/559/week-1-october-1st-october-7th/3480/) _CRUX: Keep a window range. increment low if it falls out of the interval._<div style="font-weight: bold">Time Complexity : O(N)</div>
-24. 🟡 [Longest Substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) _CRUX: Sliding window(i,j). Keep a count map. If next(j+1) character is repeating then decrement the count of ith character and i++ else increment the count of (j+1)th character, j++ and calculate max length_
+24. 🟡 [Longest Substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) _CRUX: Sliding window(i,j). Keep a count map. while(j!=n-1) If next(j+1) character is not repeating then increment the count of (j+1)th character, j++ and calculate max length else decrement the count of ith character and i++_
 
 #### GeeksForGeeks
 
@@ -208,10 +208,10 @@
 
 #### LeetCode
 
-48. 🔴 [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) _CRUX: _<div style="font-weight: bold">Time Complexity : O() </div>
-49. 🟡 [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) _CRUX: _<div style="font-weight: bold">Time Complexity : O() </div>
+48.  🟢 [Buddy Strings](https://leetcode.com/problems/buddy-strings/) _CRUX: Think of the 2 possible true cases - 1.  if strings are equal && set of char in A is lesser than A's length => there are duplicates which can be swapped. 2. if strings are not equal but there are only two different characters(use vector to store indices and compute the size) and those two characters give same string if swapped._<div style="font-weight: bold">Time Complexity : O(N) </div>
+49.  🔥 🔴 [Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/) _CRUX: Keep track of count for every char. Traverse the string again. decrement the count to keep track of last occurrence. if the current char is already in the result don't add it to the result else (while) as long as result is not empty and last char in the result is lexically greater and we expect to see it in further iterations(count!=0) - keep deleting the last char and mark it unvisited. append the current char and mark it visited_<div style="font-weight: bold">Time Complexity : O(N) (N for traversing each letter in the string ) </div>
 
 #### GeeksForGeeks
-51.  🟡 [Flatten a Linked List](https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1) _CRUX: _<div style="font-weight: bold">Time Complexity : O() </div>
+50.  🟡 [Flatten a Linked List](https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1) _CRUX: Merge sort the linked list_<div style="font-weight: bold">Time Complexity : O() </div>
 
 <div style="font-size: 10px; font-style: italic; margin-top: 100px" >template credit: [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)</div>
