@@ -10,7 +10,7 @@
 **Problems Solved**
 
 🟢 Easy: 56  
-🟡 Medium: 52  
+🟡 Medium: 54  
 🔴 Hard: 5  
 🔥 Review
 
@@ -213,5 +213,13 @@
 
 #### GeeksForGeeks
 50.  🟡 [Flatten a Linked List](https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1) _CRUX: Merge sort the linked list_<div style="font-weight: bold">Time Complexity : O() </div>
+
+## Day 17:
+
+**Topic:** 
+
+#### LeetCode
+
+51.   🟡 [Sort Linked List](https://leetcode.com/problems/sort-list/) _CRUX: sortList() - Break the list into two parts at every call. merge() - Create a new list and keep adding the nodes in sorted order. Recursively call the sortList() with updated head values_<div style="font-weight: bold">Time Complexity : O(NlogN) </div>
 
 <div style="font-size: 10px; font-style: italic; margin-top: 100px" >template credit: [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)</div>
