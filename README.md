@@ -189,7 +189,7 @@
 
 ## Day 15:
 
-**Topic:** 
+**Topic:** Linked List, Arrays
 
 #### LeetCode
 
@@ -204,22 +204,30 @@
 
 ## Day 16:
 
-**Topic:** 
+**Topic:** Strings/Hashmaps
 
 #### LeetCode
 
 48.  🟢 [Buddy Strings](https://leetcode.com/problems/buddy-strings/) _CRUX: Think of the 2 possible true cases - 1.  if strings are equal && set of char in A is lesser than A's length => there are duplicates which can be swapped. 2. if strings are not equal but there are only two different characters(use vector to store indices and compute the size) and those two characters give same string if swapped._<div style="font-weight: bold">Time Complexity : O(N) </div>
-49.  🔥 🔴 [Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/) _CRUX: Keep track of count for every char. Traverse the string again. decrement the count to keep track of last occurrence. if the current char is already in the result don't add it to the result else (while) as long as result is not empty and last char in the result is lexically greater and we expect to see it in further iterations(count!=0) - keep deleting the last char and mark it unvisited. append the current char and mark it visited_<div style="font-weight: bold">Time Complexity : O(N) (N for traversing each letter in the string ) </div>
+49. 🔴 🔥 [Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/) _CRUX: Keep track of count for every char. Traverse the string again. decrement the count to keep track of last occurrence. if the current char is already in the result don't add it to the result else (while) as long as result is not empty and last char in the result is lexically greater and we expect to see it in further iterations(count!=0) - keep deleting the last char and mark it unvisited. append the current char and mark it visited_<div style="font-weight: bold">Time Complexity : O(N) (N for traversing each letter in the string ) </div>
 
 #### GeeksForGeeks
-50.  🟡 [Flatten a Linked List](https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1) _CRUX: Merge sort the linked list_<div style="font-weight: bold">Time Complexity : O() </div>
+50.  🟡 [Flatten a Linked List](https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1) _CRUX: Merge sort the linked list_<div style="font-weight: bold">Time Complexity : O(NlogN ?) </div>
 
 ## Day 17:
 
-**Topic:** 
+**Topic:** Linked List
 
 #### LeetCode
 
-51.   🟡 [Sort Linked List](https://leetcode.com/problems/sort-list/) _CRUX: sortList() - Break the list into two parts at every call. merge() - Create a new list and keep adding the nodes in sorted order. Recursively call the sortList() with updated head values_<div style="font-weight: bold">Time Complexity : O(NlogN) </div>
+51.   🟡 🔥 [Sort Linked List](https://leetcode.com/problems/sort-list/) _CRUX: sortList() - Break the list into two parts at every call. merge() - Create a new list and keep adding the nodes in sorted order. Recursively call the sortList() with updated head values_<div style="font-weight: bold">Time Complexity : O(NlogN) </div>
+
+## Day 18:
+
+**Topic:** Dynamic Programming
+
+#### LeetCode
+52.  🟢 [House Robber ](https://leetcode.com/problems/house-robber/) _CRUX: DP problem. At a given state you  either take the previous house money or the sum of the house before previous and the current house money. Use two previous and before previous house pointers instead of an entire array._<div style="font-weight: bold">Time Complexity : O(N) </div>
+53.  🟡 🔥 [House Robber II](https://leetcode.com/problems/house-robber-ii/) _CRUX: Same as House Robber. Function called twice. (0 - n-2) and (1 - n-1). Take the maximum of those two results._<div style="font-weight: bold">Time Complexity : O(N) </div>
 
 <div style="font-size: 10px; font-style: italic; margin-top: 100px" >template credit: [DeepakTalwar/interview-prep-cpp](https://github.com/deepaktalwardt/interview-prep-cpp)</div>
