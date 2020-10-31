@@ -2,9 +2,6 @@
 
 <div align="center">
 
-![](https://leetcode-badge.haozibi.dev/v1cn/solved/haozibi.svg?style=for-the-badge&logo=leetcode)
-![](https://leetcode-badge.haozibi.dev/v1cn/accepted-rate/haozibi.svg?style=for-the-badge&color=ff5983&logo=leetcode)
-
 </div>
 
 **Problems Solved**
